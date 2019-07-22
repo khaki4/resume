@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jeoung Jiwon's resume</title>
+    <style>
+        /* Reset */
+
+        html,
+        body {
+            width: 100%;
+            height: 100%
+        }
+
+        html {
+            overflow-y: scroll;
+            font-size: 10px
+        }
+
+        body,
+        div,
+        dl,
+        dt,
+        dd,
+        ul,
+        ol,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        form,
+        fieldset,
+        p,
+        button {
+            margin: 0;
+            padding: 0
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        input,
+        button {
+            font-family: Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;
+            font-size: 15px;
+            color: #383d41
+        }
+
+        body {
+            background-color: #fff;
+            text-align: left;
+            *word-break: break-all;
+            -ms-word-break: break-all
+        }
+
+        img,
+        fieldset,
+        iframe {
+            border: 0 none
+        }
+
+        li {
+            list-style: none
+        }
+
+        input,
+        select,
+        button {
+            vertical-align: middle
+        }
+
+        img {
+            vertical-align: top
+        }
+
+        i,
+        em,
+        address {
+            font-style: normal
+        }
+
+        label,
+        button {
+            cursor: pointer
+        }
+
+        button {
+            margin: 0;
+            padding: 0
+        }
+
+        a {
+            color: #222;
+            text-decoration: underline
+        }
+
+        a:hover {
+            color: #390;
+            text-decoration: underline
+        }
+
+        button * {
+            position: relative
+        }
+
+        button img {
+            left: -3px;
+            *left: auto
+        }
+
+        html:first-child select {
+            height: 20px;
+            padding-right: 6px
+        }
+
+        option {
+            padding-right: 6px
+        }
+
+        hr {
+            display: none
+        }
+
+        legend {
+            *width: 0
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0
+        }
+
+        input::-ms-clear {
+            display: none
+        }
+        /* Common */
+
+        .show {
+            display: block
+        }
+
+        .hide {
+            display: none
+        }
+
+        .blind,
+        legend {
+            display: block;
+            overflow: hidden;
+            position: absolute;
+            top: -1000em;
+            left: 0
+        }
+
+        .ir {
+            display: block;
+            overflow: hidden;
+            position: relative;
+            z-index: -1;
+            height: 11px;
+            font-size: 11px;
+            white-space: nowrap
+        }
+
+        .ellipsis {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            -o-text-overflow: ellipsis
+        }
+
+        .entry-title {
+            display: none
+        }
+
+        iframe {
+            vertical-align: top
+        }
+
+        body {
+            color: #333;
+            width: 940px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        #header {
+            position: relative;
+            border-top: 50px solid #98ca40;
+            padding: 30px 0 50px;
+        }
+
+        #header p {
+            padding-left: 200px;
+        }
+
+        h2 {
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+            padding-left: 200px;
+        }
+
+        .section {
+            padding: 0 10px 0;
+            margin-bottom: 20px;
+        }
+
+        .section h3 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #777;
+            border-bottom: 4px solid #98ca40;
+            margin-bottom: 10px;
+        }
+
+        .section > p,
+        .section > ul {
+            padding: 0 0 0 200px;
+        }
+
+        .section h4 {
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .section h5 {
+            position: relative;
+            font-size: 15px;
+        }
+
+        .section h5 span {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .section.end {
+            padding-bottom: 100px;
+        }
+        .bu-circle {
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .bu-circle > li {
+            list-style: square;
+            list-style-position: inside;
+        }
+
+        .photo {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        li p {
+            padding-left: 15px;
+        }
+
+        .clearfix:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+        }
+
+        * html .clearfix {
+            zoom: 1;
+        }
+        /* IE6 */
+
+        *:first-child+html .clearfix {
+            zoom: 1;
+        }
+        /* IE7 */
+        .tech-skill-list {
+            padding-right: 400px!important;
+        }
+        .tech-skill-list > li {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1 class="hide">정지원의 프론트 앤드 개발자 이력서</h1>
+        <h2>정지원</h2>
+            <p>
+                 <a href="https://github.com/khaki4/">Github</a>
+                | <a href="tel:01096156863">010.9615.6863</a>
+                | <a href="mailto:4dakto@gmail.com">4dakto@gmail.com</a>
+                | <a href="https://kr.linkedin.com/in/jiwon-jeoung-270a9065" target="_blank">LinkedIn</a></p>
+            <p>생년월일: 1982.07.03</p>
+    </div>
+
+    <div class="section">
+        <h3>Profile</h3>
+        <p>
+            열정을 가지고 보다 나은  서비스를 만들기 위해 항상 고민하는 개발자 정지원입니다.
+            <br><br> &nbsp;&nbsp;SNS에서 팔로잉 하고 있는 분들이 모두 개발자일 정도로 평소에도 관련 기술에 관심이 많습니다. 단순히 트렌드를 따르는 것이 아닌 기술의 장단점이 무엇이고 기술이 왜 쓰이는가에 대해 끊임없이 고민하고 있습니다.
+             또한, 평소 관련 서적, 스터디, SNS, egghead.io, Udemy, Youtube 등을 통해 신기술의 흐름과 핵심 놓치지 않고 꾸준히 학습하여 회사프로젝트의 발전과 개인의 발전에 노력하고있습니다.
+            <br><br> &nbsp;&nbsp;개발관련 기술에 대해 토론, 공유 하는 것을 즐깁니다. 현재 재직중인 회사에서 React 관련 스터디를 주도했으며 코드리뷰에도 적극적으로 참여하여 향상된 코드를 작성하는데 관심이 많습니다.
+             또한, 더욱 향상된 서비스를 제공하여 사용자에게 보답하고 스스로 성취감을 느낄 수 있도록 유지보수와 퍼포먼스를 최선으로 생각하는 개발을 하기위해 끊임없이 노력하고 있습니다.
+        </p>
+    </div>
+    <div class="section">
+        <h3>Work Experience</h3>
+        <ul>
+            <li>
+                <h3>Front-end Developer</h4>
+                <h5>DailyHotel: React 모바일 웹 개발<span class="date"> 2018.12 ~ 현재</span></h5>
+                <br />
+                <ul>
+                    <li>
+                        <h5>데일리 호텔 모바일 웹</h5>
+                        <ul class="bu-circle">
+                            <li>어플리케이션 스트럭쳐 설계 및 기능 개발 주도</li>
+                            <li>Typescript, React, Redux, Redux-Saga</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>Front-end Developer</h4>
+                <h5>푸른밤: React Native 앱 & React 웹 개발<span class="date"> 2017.05 ~ 2018.11</span></h5>
+                <br />
+                <ul>
+                    <li>
+                        <h5>알밤 웹관리자</h5>
+                        <ul class="bu-circle">
+                            <li>출퇴근 관리 백오피스: React, Redux, Redux-Saga</li>
+                            <li>앱 스트럭쳐 설계 및 기능 개발</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>알밤 관리자/직원용 앱</h5>
+                        <ul class="bu-circle">
+                            <li>블루투스를 이용 출퇴근 관리 앱 : React Native</li>
+                            <li>클라이언트 스트럭쳐 설계 및 베스트 프랙티스 주도</li>
+                            <li>typescript 활용 앱 개편 주도</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>Front-end Developer</h3>
+                <h5>PhiNetworks(삼성 파트너 앱개발사): 하이브리드 앱 개발<span class="date"> 2016.02 ~ 2017.05</span></h5>
+                <br />
+                <ul>
+                    <li>
+                        <h5>GolfNavi for Gear S3개발 및 유지보수</h5>
+                        <ul class="bu-circle">
+                            <li>스마트 웨어러블 디바이스로 골프 네비게이션 기능 수행 : AngularJs 1.x</li>
+                            <li>메인 개발자로서 앱 컨셉 기획에서부터 주도적으로 참여 사용자의 편의성에 맞는 기능 기획 및 제작</li>
+                            <li>네비게이션 로직 개발 및 UI 개발</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>NaviNote for Android 개발 및 유지보수</h5>
+                        <ul class="bu-circle">
+                            <li>웨어러블 앱의 골프 스코어를 스마트 폰 앱과 데이터 싱크하는기능 수행 : AngularJs 1.x, Cordova</li>
+                            <li>클라이언트 단독 개발</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5>GolfNavi for GearFit2 개발 및 유지보수</h5>
+                        <ul class="bu-circle">
+                            <li>스마트 웨어러블 디바이스로 골프 네비게이션 기능 수행 : AngularJs 1.x</li>
+                            <li>UI 수정 및 네비게이션 기능 개발</li>
+                            <li>VOC로 부터 사용자들이 원하는 기능 기획 및 제작</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h3>Web Publisher</h3>
+                <h5>IT SIX(웹 에이젼시): HTML, CSS 마크업 UI 개발<span class="date"> 2014.07 ~ 2015.10(1년 4개월)</span></h5>
+                <br />
+                <ul class="bu-circle">
+                    <li>정화예술 대학교 메인 리뉴얼</li>
+                    <li>아이티식스 사이트 리뉴얼</li>
+                    <li>동양미래대학교 사이트 구축</li>
+                    <li>ART n TOY GALLERY 사이트 구축</li>
+                    <li>정화예술 대학교 사이트 구축</li>
+                    <li>BR뇌교육 모바일 사이트 구축</li>
+                    <li>크레오넷(한국과학기술정보연구원 초고속연구망) 구축</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="section end">
+        <h3></h3>
+    </div>
+</body>
+
+</html>
